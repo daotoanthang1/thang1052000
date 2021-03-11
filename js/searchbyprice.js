@@ -2,14 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var firstPrice = document.querySelector("#first-price");
     var lastPrice = document.querySelector("#last-price");
     var s_productItem = document.getElementsByClassName("s_productItem");
-    var check = document.getElementById("check");
     var priceProduct = document.getElementsByClassName("productItemPriceNew");
     var buttonClicked = document.querySelector(".find");
     var wrapperNewProducts = document.getElementsByClassName("wrapperNewProducts");
     buttonClicked.addEventListener("click", function () {
         var valueFirstPrice = firstPrice.value;
         var valueLastPrice = lastPrice.value;
-       check.innerHTML = '';
         for (let i = 0; i < s_productItem.length; i++) {
             var innerTxtPriceProduct = priceProduct[i].innerText;
 
@@ -42,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                     </div>
                 </div>`;
-                check.innerHTML += itemFilter;
                 }
                 
                 
